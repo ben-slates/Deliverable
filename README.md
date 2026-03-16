@@ -1,279 +1,150 @@
-# 🧪 Data Analytics Lab Practical Guide (Step-by-Step)
+# 📊 Data Analytics Laboratory: Comprehensive Practical Guide
 
-This complete guide will help you perform all required practical tasks for your lab:
+This repository contains a series of laboratory exercises and projects designed to build a strong foundation in **Data Analytics** using Python. The curriculum progresses from environment setup and basic data structures to advanced numerical computing with **NumPy** and real-world financial data analysis.
 
-------------------------------------------------------------------------
+---
 
-## 1️⃣ Install Anaconda & Verify Python Installation
+## 📂 Project Structure
 
-### 🔹 What is Anaconda?
+The project is organized into three main laboratory modules, each focusing on specific aspects of the data analytics pipeline:
 
-Anaconda is a Python distribution that includes Python, Jupyter Notebook, and many data science libraries pre-installed.
-
-### 🖥 Step 1: Download Anaconda
-
--   Go to: https://www.anaconda.com\
--   Download Python 3.x version\
--   Install with default settings
-
-### 🔹 Step 2: Verify Python Installation
-
-After installation:
-
-Open Anaconda Prompt and type:
-
-    python --version
-
-You should see output like:
-
-    Python 3.x.x
-
-To check Conda version:
-
-    conda --version
-
-✅ If versions appear → Installation successful.
-
-------------------------------------------------------------------------
-
-## 2️⃣ Set Up Jupyter Notebook & Google Colab
-
-### 🔹 A. Jupyter Notebook Setup
-
-Jupyter comes pre-installed with Anaconda.
-
-▶ To Launch:
-
-Open Anaconda Navigator → Click Launch under Jupyter Notebook\
-OR use command:
-
-    jupyter notebook
-
-Your browser will open Jupyter dashboard.
-
-▶ Create First Notebook: - Click New\
-- Select Python 3\
-- Rename file (e.g., `Lab_Practical_1.ipynb`)
-
-------------------------------------------------------------------------
-
-### 🔹 B. Google Colab Setup
-
-Google Colab is an online Jupyter notebook that runs in the browser (no installation needed).
-
-▶ Steps: - Visit: https://colab.research.google.com\
-- Sign in with Google account\
-- Click New Notebook
-
-✅ Advantage: Free GPU & cloud execution.
-
-------------------------------------------------------------------------
-
-## 3️⃣ Install Essential Libraries
-
-Required libraries: - pandas\
-- NumPy\
-- matplotlib\
-- seaborn
-
-### 🔹 Using Anaconda Prompt:
-
-    conda install pandas numpy matplotlib seaborn
-
-OR using pip:
-
-    pip install pandas numpy matplotlib seaborn
-
-### 🔹 Verify Installation in Notebook:
-
-``` python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-print("Libraries Installed Successfully")
+```
+.
+└── Deliverable
+    ├── lab 1/                 # Environment Setup & Introduction
+    │   ├── Practical_Task_1.ipynb
+    │   └── [Supporting Images & Documentation]
+    ├── lab 2/                 # Advanced Python Data Processing
+    │   ├── assignment.ipynb
+    │   ├── data/              # CSV Datasets (Sales, Students)
+    │   ├── images/            # Conceptual Diagrams
+    │   └── students.json      # JSON Dataset
+    ├── lab 3/                 # Numerical Computing with NumPy
+    │   ├── numpy_stock_analysis/
+    │   │   ├── numpy_stock_operations.ipynb
+    │   │   └── AAPL_stock_data.csv
+    │   ├── Clean_data.py
+    │   ├── Download_data.py
+    │   └── requirements.txt
+    └── README.md              # Project Documentation
 ```
 
-If no errors → Installation successful ✅
+---
 
-------------------------------------------------------------------------
+## 🛠️ Phase 1: Environment Setup & Foundation (Lab 1)
 
-## 4️⃣ Create First Jupyter Notebook (Basic Python Operations)
+The initial phase focuses on establishing a robust development environment for data science.
 
-Open new notebook and write:
+### 🔹 1. Installation & Verification
 
-``` python
-# Basic operations
+- **Anaconda Distribution**: A comprehensive Python distribution including Jupyter Notebooks and essential data science libraries.
+  - Download: [Anaconda Official Site](https://www.anaconda.com)
 
-a = 10
-b = 5
+- **Verification**:
 
-# Arithmetic
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
+   ```bash
+   python --version
+   conda --version
+   ```
 
-# List example
-numbers = [1, 2, 3, 4, 5]
-print("List:", numbers)
+- **Alternative**: **Google Colab** for cloud-based execution without local installation.
 
-# NumPy example
-array = np.array(numbers)
-print("NumPy Array:", array)
+### 🔹 2. Essential Library Stack
 
-# Simple pandas DataFrame
-data = {
-    "Name": ["Ali", "Sara", "John"],
-    "Marks": [85, 90, 78]
-}
+The following libraries are fundamental to the workflow:
 
-df = pd.DataFrame(data)
-print(df)
-```
+| Library | Purpose |
+| --- | --- |
+| **Pandas** | High-performance data manipulation and analysis |
+| **NumPy** | Fundamental package for scientific computing |
+| **Matplotlib** | Comprehensive library for static, animated, and interactive visualizations |
+| **Seaborn** | Statistical data visualization based on Matplotlib |
 
-📌 Run cell using **Shift + Enter**
+---
 
-------------------------------------------------------------------------
+## 🐍 Phase 2: Advanced Python Data Processing (Lab 2)
 
-## 5️⃣ Data Analytics Use Cases Across Industries
+This module transitions from basic syntax to sophisticated data handling techniques required for professional data engineering.
 
-Data Analytics is used in almost every industry.
+### 🔹 Key Learning Objectives
 
-### 🏥 1. Healthcare
+- **Data Structures**: Mastering the use of Lists, Dictionaries, Tuples, and Sets for efficient data storage.
 
--   Disease prediction\
--   Patient data analysis\
--   Medical imaging\
--   Example: Predicting diabetes using patient data
+- **Functional Programming**: Writing modular, reusable functions for data cleaning and transformation.
 
-### 🏦 2. Banking & Finance
+- **File I/O Operations**: Programmatic interaction with various data formats:
+  - **CSV**: Tabular data handling.
+  - **JSON**: Working with semi-structured web data.
+  - **Text**: Processing unstructured data.
 
--   Fraud detection\
--   Risk analysis\
--   Credit scoring\
--   Stock market prediction
+- **Efficiency**: Utilizing **List Comprehensions** for concise and readable code.
 
-### 🛒 3. Retail & E-commerce
+- **Robustness**: Implementing `try-except` blocks for graceful error and exception handling.
 
--   Customer behavior analysis\
--   Sales forecasting\
--   Recommendation systems\
--   Example: Amazon product recommendations
+---
 
-### 🚗 4. Transportation
+## 📈 Phase 3: Numerical Computing & Stock Analysis (Lab 3)
 
--   Route optimization\
--   Traffic prediction\
--   Ride demand forecasting
+The final module demonstrates high-performance numerical computing using **NumPy**, applied to historical financial data for Apple Inc. (AAPL).
 
-### 🎓 5. Education
+### 🔹 Practical NumPy Tasks
 
--   Student performance analysis\
--   Dropout prediction\
--   Personalized learning systems
+1. **Array Manipulation**: Creation and transformation of 1D, 2D, and 3D arrays (representing Weeks × Days × Metrics).
 
-### 🏭 6. Manufacturing
+1. **Advanced Indexing**: Slicing and reshaping techniques for time-series data analysis.
 
--   Quality control\
--   Predictive maintenance\
--   Supply chain optimization
+1. **Mathematical Operations**: Leveraging **Broadcasting** and element-wise operations for efficient computation.
 
-------------------------------------------------------------------------
+1. **Statistical Analysis**: Computing Mean, Median, Standard Deviation, and Percentiles.
 
-## 📊 Common Tools Used in Data Analytics
+1. **Linear Algebra**: Applying dot products and matrix multiplications for portfolio weighting.
 
-| Tool       | Purpose                   |
-|------------|---------------------------|
-| Python     | Data processing           |
-| Pandas     | Data manipulation         |
-| NumPy      | Numerical computing       |
-| Matplotlib | Data visualization        |
-| Seaborn    | Statistical visualization |
-| SQL        | Database querying         |
+1. **Random Sampling**: Generating distributions for stochastic modeling.
 
-------------------------------------------------------------------------
+### 🚀 Performance Benchmark
 
-### ✅ Final Lab Checklist
+A key component of this lab is the performance comparison between **NumPy** and native **Python Lists**.
 
--   Install Anaconda\
--   Verify Python\
--   Launch Jupyter\
--   Open Google Colab\
--   Install required libraries\
--   Create first notebook\
--   Understand industry use cases
+> **Finding**: NumPy operations are typically **50x to 100x faster** than standard lists for large-scale numerical tasks, illustrating why it is the industry standard for scientific computing.
 
-------------------------------------------------------------------------
+---
 
-## Python Data Processing Assignment
+## 🏥 Industry Use Cases
 
-### Objectives
+Data analytics techniques covered in these labs are applied across various sectors:
 
-This assignment demonstrates the following Python concepts:
+| Industry | Application Examples |
+| --- | --- |
+| **Healthcare** | Disease prediction, patient data analysis, and medical imaging. |
+| **Finance** | Fraud detection, risk analysis, and stock market prediction. |
+| **Retail** | Customer behavior analysis and recommendation systems (e.g., Amazon). |
+| **Manufacturing** | Predictive maintenance and quality control optimization. |
+| **Education** | Student performance analysis and personalized learning systems. |
 
--   Python Data Structures (Lists, Dictionaries, Tuples, Sets)
--   Functions for Data Processing
--   Reading and Writing Files (CSV, JSON, Text)
--   List Comprehensions
--   Error and Exception Handling
+---
 
-### Dataset
+## ✅ Final Lab Checklist
 
--   Student grades dataset (CSV)
--   Sales dataset
+- [x] Successfully installed and verified Anaconda/Python environment.
 
-### Deliverable
+- [x] Configured Jupyter Notebook and Google Colab environments.
 
-A Jupyter Notebook containing Python exercises and file processing examples.
+- [x] Demonstrated proficiency in Python data structures (Lists, Dicts, Tuples).
 
-### Technologies Used
+- [x] Implemented file I/O for CSV and JSON datasets.
 
--   Python
--   Jupyter Notebook
--   CSV / JSON file handling
+- [x] Executed complex numerical operations using NumPy on financial datasets.
 
-## 6️⃣ Advanced Python Data Processing Techniques
+- [x] Conducted performance benchmarking for vectorized operations.
 
-This section delves into more sophisticated Python techniques essential for robust data processing and analysis.
+---
 
-### 🔹 7. Work with Python Data Structures
+*This project was developed as part of the Data Analytics Laboratory curriculum.*
 
-Understanding and effectively utilizing Python's built-in data structures is fundamental for efficient data manipulation. This includes:
 
--   **Lists**: Ordered, mutable collections of items.
--   **Dictionaries**: Unordered, mutable collections of key-value pairs.
--   **Tuples**: Ordered, immutable collections of items.
--   **Sets**: Unordered collections of unique items.
+## 👥 Project Contributors
 
-### 🔹 8. Write Functions for Data Processing
-
-Functions are crucial for organizing code, promoting reusability, and performing specific data processing tasks. This involves defining custom functions to clean, transform, and analyze data.
-
-### 🔹 9. Read and Write CSV, JSON, and Text Files
-
-Data often originates from or needs to be stored in various file formats. Proficiency in handling these formats programmatically is vital:
-
--   **CSV (Comma Separated Values)**: Commonly used for tabular data.
--   **JSON (JavaScript Object Notation)**: Lightweight data-interchange format, often used for web data.
--   **Text Files**: General-purpose files for storing unstructured or semi-structured data.
-
-### 🔹 10. Use List Comprehensions for Efficient Data Transformation
-
-List comprehensions provide a concise way to create lists. They are often more readable and efficient than traditional `for` loops for certain data transformation tasks.
-
-### 🔹 11. Handle Errors and Exceptions in Data Processing
-
-Robust data processing requires anticipating and gracefully handling errors. This involves using `try-except` blocks to manage exceptions that may arise during file operations, data conversions, or calculations.
-
-### Exercise Dataset
-
-To practice these advanced techniques, the following datasets are recommended:
-
--   **Student Grades CSV File**: A dataset containing student scores and related information, ideal for practicing data cleaning, aggregation, and analysis.
--   **Simple Sales Data**: A dataset detailing sales transactions, suitable for exercises involving data filtering, transformation, and reporting.
-
-### Deliverable
-
-The culmination of these exercises will be a **Jupyter Notebook** containing Python code examples that demonstrate proficiency in all the advanced data processing concepts covered, along with practical file processing examples using the specified datasets.
+This project was built by:
+- **Muhamad Umer Farooq**
+- **Muhammad Ahmed**
+- **Zaid Tahir**

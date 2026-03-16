@@ -1,0 +1,7 @@
+numpy
+pandas
+yfinance
+matplotlib
+nbformat
+nbconvert
+ipykernel
