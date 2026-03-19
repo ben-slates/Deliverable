@@ -1,23 +1,25 @@
 # 📊 Data Analytics Laboratory: Comprehensive Practical Guide
 
-This repository contains a series of laboratory exercises and projects designed to build a strong foundation in **Data Analytics** using Python. The curriculum progresses from environment setup and basic data structures to advanced numerical computing with **NumPy** and real-world financial data analysis.
+This repository contains a series of laboratory exercises and projects designed to build a strong foundation in **Data Analytics** using Python. The curriculum progresses from environment setup and basic data structures to advanced numerical computing with **NumPy**, data cleaning with **Pandas**, and professional **Data Visualization**.
 
 ---
 
 ## 📂 Project Structure
 
-The project is organized into three main laboratory modules, each focusing on specific aspects of the data analytics pipeline:
+The project is organized into five main laboratory modules, each focusing on specific aspects of the data analytics pipeline:
 
-```
+```text
 .
 └── Deliverable
     ├── lab 1/                 # Environment Setup & Introduction
-    │   ├── Practical_Task_1.ipynb
-    │   └── [Supporting Images & Documentation]
+    │   ├── lab_1.ipynb
+    │   ├── Images/[Custom Images]
+    |   └── code_with_output_images/[Code Images]
     ├── lab 2/                 # Advanced Python Data Processing
-    │   ├── assignment.ipynb
+    │   ├── lab_2.ipynb
     │   ├── data/              # CSV Datasets (Sales, Students)
     │   ├── images/            # Conceptual Diagrams
+    |   ├── code_with_output_images/[Code Images]
     │   └── students.json      # JSON Dataset
     ├── lab 3/                 # Numerical Computing with NumPy
     │   ├── numpy_stock_analysis/
@@ -26,6 +28,14 @@ The project is organized into three main laboratory modules, each focusing on sp
     │   ├── Clean_data.py
     │   ├── Download_data.py
     │   └── requirements.txt
+    ├── lab 4/                 # Data Exploration & Cleaning
+    │   ├── lab_4.ipynb
+    │   ├── data.csv           # Real Estate Dataset
+    |   └── Images/[code Blocks]
+    ├── lab 5/                 # Data Visualization Portfolio
+    │   ├── lab_5.ipynb
+    │   ├── data.csv           # COVID-19 Dataset
+    |   └── Images/[code Blocks]
     └── README.md              # Project Documentation
 ```
 
@@ -36,25 +46,19 @@ The project is organized into three main laboratory modules, each focusing on sp
 The initial phase focuses on establishing a robust development environment for data science.
 
 ### 🔹 1. Installation & Verification
-
-- **Anaconda Distribution**: A comprehensive Python distribution including Jupyter Notebooks and essential data science libraries.
-  - Download: [Anaconda Official Site](https://www.anaconda.com)
-
-- **Verification**:
-
-   ```bash
-   python --version
-   conda --version
-   ```
-
-- **Alternative**: **Google Colab** for cloud-based execution without local installation.
+*   **Anaconda Distribution**: A comprehensive Python distribution including Jupyter Notebooks and essential data science libraries.
+    *   Download: [Anaconda Official Site](https://www.anaconda.com)
+*   **Verification**:
+    ```bash
+    python --version
+    conda --version
+    ```
+*   **Alternative**: **Google Colab** for cloud-based execution without local installation.
 
 ### 🔹 2. Essential Library Stack
-
 The following libraries are fundamental to the workflow:
-
 | Library | Purpose |
-| --- | --- |
+| :--- | :--- |
 | **Pandas** | High-performance data manipulation and analysis |
 | **NumPy** | Fundamental package for scientific computing |
 | **Matplotlib** | Comprehensive library for static, animated, and interactive visualizations |
@@ -67,45 +71,51 @@ The following libraries are fundamental to the workflow:
 This module transitions from basic syntax to sophisticated data handling techniques required for professional data engineering.
 
 ### 🔹 Key Learning Objectives
-
-- **Data Structures**: Mastering the use of Lists, Dictionaries, Tuples, and Sets for efficient data storage.
-
-- **Functional Programming**: Writing modular, reusable functions for data cleaning and transformation.
-
-- **File I/O Operations**: Programmatic interaction with various data formats:
-  - **CSV**: Tabular data handling.
-  - **JSON**: Working with semi-structured web data.
-  - **Text**: Processing unstructured data.
-
-- **Efficiency**: Utilizing **List Comprehensions** for concise and readable code.
-
-- **Robustness**: Implementing `try-except` blocks for graceful error and exception handling.
+*   **Data Structures**: Mastering the use of Lists, Dictionaries, Tuples, and Sets for efficient data storage.
+*   **Functional Programming**: Writing modular, reusable functions for data cleaning and transformation.
+*   **File I/O Operations**: Programmatic interaction with various data formats (CSV, JSON, Text).
+*   **Efficiency**: Utilizing **List Comprehensions** for concise and readable code.
+*   **Robustness**: Implementing `try-except` blocks for graceful error and exception handling.
 
 ---
 
 ## 📈 Phase 3: Numerical Computing & Stock Analysis (Lab 3)
 
-The final module demonstrates high-performance numerical computing using **NumPy**, applied to historical financial data for Apple Inc. (AAPL).
+This module demonstrates high-performance numerical computing using **NumPy**, applied to historical financial data for Apple Inc. (AAPL).
 
 ### 🔹 Practical NumPy Tasks
+1.  **Array Manipulation**: Creation and transformation of 1D, 2D, and 3D arrays.
+2.  **Advanced Indexing**: Slicing and reshaping techniques for time-series data analysis.
+3.  **Mathematical Operations**: Leveraging **Broadcasting** and element-wise operations.
+4.  **Statistical Analysis**: Computing Mean, Median, Standard Deviation, and Percentiles.
+5.  **Linear Algebra**: Applying dot products for portfolio weighting.
 
-1. **Array Manipulation**: Creation and transformation of 1D, 2D, and 3D arrays (representing Weeks × Days × Metrics).
+---
 
-1. **Advanced Indexing**: Slicing and reshaping techniques for time-series data analysis.
+## 🔍 Phase 4: Data Exploration & Cleaning (Lab 4)
 
-1. **Mathematical Operations**: Leveraging **Broadcasting** and element-wise operations for efficient computation.
+This module focuses on practical data exploration and cleaning using **Pandas** on a real estate transaction dataset.
 
-1. **Statistical Analysis**: Computing Mean, Median, Standard Deviation, and Percentiles.
+### 🔹 Key Cleaning & Exploration Tasks
+*   **Initial Inspection**: Using `head()`, `tail()`, `info()`, and `describe()` to understand data structure.
+*   **Filtering & Selection**: Isolating specific data subsets based on complex conditions (e.g., price and location).
+*   **Missing Data Management**: Identifying and imputing missing values using mean/mode strategies.
+*   **Data Transformation**: Feature engineering (e.g., PricePerYear) and column normalization.
+*   **Exporting**: Saving the final cleaned dataset for downstream analysis.
 
-1. **Linear Algebra**: Applying dot products and matrix multiplications for portfolio weighting.
+---
 
-1. **Random Sampling**: Generating distributions for stochastic modeling.
+## 🎨 Phase 5: Data Visualization Portfolio (Lab 5)
 
-### 🚀 Performance Benchmark
+The final module showcases professional data visualization techniques using **Matplotlib** and **Seaborn** on a global COVID-19 dataset.
 
-A key component of this lab is the performance comparison between **NumPy** and native **Python Lists**.
-
-> **Finding**: NumPy operations are typically **50x to 100x faster** than standard lists for large-scale numerical tasks, illustrating why it is the industry standard for scientific computing.
+### 🔹 Visualization Techniques Included
+*   **Trend Analysis**: Line plots and area plots for time-series tracking.
+*   **Categorical Comparison**: Bar charts and count plots for regional statistics.
+*   **Distribution Analysis**: Histograms, box plots, and violin plots.
+*   **Relationship Mapping**: Scatter plots with multi-dimensional encoding (color, size).
+*   **Statistical Correlation**: Heatmaps for identifying variable dependencies.
+*   **Multi-panel Figures**: Utilizing subplots for complex data storytelling.
 
 ---
 
@@ -114,37 +124,33 @@ A key component of this lab is the performance comparison between **NumPy** and 
 Data analytics techniques covered in these labs are applied across various sectors:
 
 | Industry | Application Examples |
-| --- | --- |
-| **Healthcare** | Disease prediction, patient data analysis, and medical imaging. |
+| :--- | :--- |
+| **Healthcare** | Disease prediction, patient data analysis, and COVID-19 spread tracking. |
 | **Finance** | Fraud detection, risk analysis, and stock market prediction. |
-| **Retail** | Customer behavior analysis and recommendation systems (e.g., Amazon). |
+| **Retail** | Customer behavior analysis and recommendation systems. |
+| **Real Estate** | Property valuation, market trend analysis, and investment risk assessment. |
 | **Manufacturing** | Predictive maintenance and quality control optimization. |
-| **Education** | Student performance analysis and personalized learning systems. |
 
 ---
 
 ## ✅ Final Lab Checklist
 
 - [x] Successfully installed and verified Anaconda/Python environment.
-
-- [x] Configured Jupyter Notebook and Google Colab environments.
-
 - [x] Demonstrated proficiency in Python data structures (Lists, Dicts, Tuples).
-
 - [x] Implemented file I/O for CSV and JSON datasets.
-
 - [x] Executed complex numerical operations using NumPy on financial datasets.
-
-- [x] Conducted performance benchmarking for vectorized operations.
+- [x] Performed end-to-end data cleaning and exploration on real estate data.
+- [x] Developed a comprehensive visualization portfolio with 10+ chart types.
 
 ---
 
 *This project was developed as part of the Data Analytics Laboratory curriculum.*
 
-
 ## 👥 Project Contributors
-
-This project was built by:
 - **Muhamad Umer Farooq**
-- **Muhammad Ahmed**
-- **Zaid Tahir**
+- **Muhammad Ahmad**
+- **Muhammad Zaid Tahir**
+
+### Group Members
+- **Muhammad Huzaifa Khalid**
+- **Ali Hammad Subhani**
