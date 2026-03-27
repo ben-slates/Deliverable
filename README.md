@@ -11,32 +11,65 @@ The project is organized into five main laboratory modules, each focusing on spe
 ```text
 .
 └── Deliverable
-    ├── lab 1/                 # Environment Setup & Introduction
+    ├── lab_1/                         # Environment Setup & Introduction
     │   ├── lab_1.ipynb
-    │   ├── Images/[Custom Images]
-    |   └── code_with_output_images/[Code Images]
-    ├── lab 2/                 # Advanced Python Data Processing
+    │   ├── Images/                    # Custom Images (0.png, 1.webp, ...)
+    │   └── code_with_output_images/   # Code + Output Images (cell_1.png → cell_4.png)
+    │
+    ├── lab_2/                         # Advanced Python Data Processing
     │   ├── lab_2.ipynb
-    │   ├── data/              # CSV Datasets (Sales, Students)
-    │   ├── images/            # Conceptual Diagrams
-    |   ├── code_with_output_images/[Code Images]
-    │   └── students.json      # JSON Dataset
-    ├── lab 3/                 # Numerical Computing with NumPy
+    │   ├── data/                      # CSV Datasets (sales.csv, students.csv)
+    │   ├── images/                    # Conceptual Images
+    │   ├── code_with_output_images/   # Code + Output Images (cell_1 → cell_8)
+    │   ├── students.json              # JSON Dataset
+    │   └── notes.txt                  # Notes
+    │
+    ├── lab_3/                         # Numerical Computing with NumPy
     │   ├── numpy_stock_analysis/
-    │   │   ├── numpy_stock_operations.ipynb
-    │   │   └── AAPL_stock_data.csv
+    │   │   ├── lab_3.ipynb
+    │   │   ├── AAPL_stock_data.csv
+    │   │   ├── AAPL_stock_data_cleaned.csv
+    │   │   └── images/
     │   ├── Clean_data.py
+    │   ├── create_clened_csv.py
     │   ├── Download_data.py
+    │   ├── Images/                    # NumPy Concept Images
     │   └── requirements.txt
-    ├── lab 4/                 # Data Exploration & Cleaning
+    │
+    ├── lab_4/                         # Data Exploration & Cleaning
     │   ├── lab_4.ipynb
-    │   ├── data.csv           # Real Estate Dataset
-    |   └── Images/[code Blocks]
-    ├── lab 5/                 # Data Visualization Portfolio
+    │   ├── data.csv                   # Dataset
+    │   ├── real_estate_cleaned.csv
+    │   └── images/                    # Code Cell Images (cell_1 → cell_8)
+    │
+    ├── lab_5/                         # Data Visualization Portfolio
     │   ├── lab_5.ipynb
-    │   ├── data.csv           # COVID-19 Dataset
-    |   └── Images/[code Blocks]
-    └── README.md              # Project Documentation
+    │   ├── data.csv                   # Dataset
+    │   └── images/                    # Code Cell Images (cell_1 → cell_14)
+    │
+    ├── manual/                        # Documentation (All Labs)
+    │   ├── lab1/
+    │   │   ├── lab_1.docx
+    │   │   ├── lab_1.pdf
+    │   │   └── Images/                # Code + Custom Images
+    │   ├── lab2/
+    │   │   ├── lab_2.docx
+    │   │   ├── lab_2.pdf
+    │   │   └── images/                # Code + Custom Images
+    │   ├── lab3/
+    │   │   ├── Lab_3.docx
+    │   │   ├── Lab_3.pdf
+    │   │   └── images/               # Code + Custom Images
+    │   ├── lab4/
+    │   │   ├── lab_4.docx
+    │   │   ├── lab_4.pdf
+    │   │   └── images/                # Code + Custom Images
+    │   └── lab5/
+    │       ├── lab_5.docx
+    │       ├── lab_5.pdf
+    │       └── images/              # Code + Custom Images
+    │
+    └── README.md                      # Project Documentation
 ```
 
 ---
