@@ -187,3 +187,14 @@ Data analytics techniques covered in these labs are applied across various secto
 ### Group Members
 - **Muhammad Huzaifa Khalid**
 - **Ali Hammad Subhani**
+
+
+---
+
+## 🧾 License & Credits
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
+  <img src="https://img.shields.io/badge/Built%20by-BEN-green"/>
+  <img src="https://img.shields.io/badge/Python-Data%20Analytics-blue?logo=python"/>
+</p>
