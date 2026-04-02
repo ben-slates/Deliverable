@@ -6,70 +6,79 @@ This repository contains a series of laboratory exercises and projects designed 
 
 ## 📂 Project Structure
 
-The project is organized into five main laboratory modules, each focusing on specific aspects of the data analytics pipeline:
+The project is organized into six main laboratory modules, each focusing on specific aspects of the data analytics pipeline:
 
 ```text
 .
-└── Deliverable
-    ├── lab_1/                         # Environment Setup & Introduction
-    │   ├── lab_1.ipynb
-    │   ├── Images/                    # Custom Images (0.png, 1.webp, ...)
-    │   └── code_with_output_images/   # Code + Output Images (cell_1.png → cell_4.png)
-    │
-    ├── lab_2/                         # Advanced Python Data Processing
-    │   ├── lab_2.ipynb
-    │   ├── data/                      # CSV Datasets (sales.csv, students.csv)
-    │   ├── images/                    # Conceptual Images
-    │   ├── code_with_output_images/   # Code + Output Images (cell_1 → cell_8)
-    │   ├── students.json              # JSON Dataset
-    │   └── notes.txt                  # Notes
-    │
-    ├── lab_3/                         # Numerical Computing with NumPy
-    │   ├── numpy_stock_analysis/
-    │   │   ├── lab_3.ipynb
-    │   │   ├── AAPL_stock_data.csv
-    │   │   ├── AAPL_stock_data_cleaned.csv
-    │   │   └── images/
-    │   ├── Clean_data.py
-    │   ├── create_clened_csv.py
-    │   ├── Download_data.py
-    │   ├── Images/                    # NumPy Concept Images
-    │   └── requirements.txt
-    │
-    ├── lab_4/                         # Data Exploration & Cleaning
-    │   ├── lab_4.ipynb
-    │   ├── data.csv                   # Dataset
-    │   ├── real_estate_cleaned.csv
-    │   └── images/                    # Code Cell Images (cell_1 → cell_8)
-    │
-    ├── lab_5/                         # Data Visualization Portfolio
-    │   ├── lab_5.ipynb
-    │   ├── data.csv                   # Dataset
-    │   └── images/                    # Code Cell Images (cell_1 → cell_14)
-    │
-    ├── manual/                        # Documentation (All Labs)
-    │   ├── lab1/
-    │   │   ├── lab_1.docx
-    │   │   ├── lab_1.pdf
-    │   │   └── Images/                # Code + Custom Images
-    │   ├── lab2/
-    │   │   ├── lab_2.docx
-    │   │   ├── lab_2.pdf
-    │   │   └── images/                # Code + Custom Images
-    │   ├── lab3/
-    │   │   ├── Lab_3.docx
-    │   │   ├── Lab_3.pdf
-    │   │   └── images/               # Code + Custom Images
-    │   ├── lab4/
-    │   │   ├── lab_4.docx
-    │   │   ├── lab_4.pdf
-    │   │   └── images/                # Code + Custom Images
-    │   └── lab5/
-    │       ├── lab_5.docx
-    │       ├── lab_5.pdf
-    │       └── images/              # Code + Custom Images
-    │
-    └── README.md                      # Project Documentation
+├── lab_1/                         # Environment Setup & Introduction
+│   ├── lab_1.ipynb
+│   ├── Images/                    # Custom Images (0.png, 1.webp, ...)
+│   └── code_with_output_images/   # Code + Output Images (cell_1.png → cell_4.png)
+│
+├── lab_2/                         # Advanced Python Data Processing
+│   ├── lab_2.ipynb
+│   ├── data/                      # CSV Datasets (sales.csv, students.csv)
+│   ├── images/                    # Conceptual Images
+│   ├── code_with_output_images/   # Code + Output Images (cell_1 → cell_8)
+│   ├── students.json              # JSON Dataset
+│   └── notes.txt                  # Notes
+│
+├── lab_3/                         # Numerical Computing with NumPy
+│   ├── numpy_stock_analysis/
+│   │   ├── lab_3.ipynb
+│   │   ├── AAPL_stock_data.csv
+│   │   ├── AAPL_stock_data_cleaned.csv
+│   │   └── images/
+│   ├── Clean_data.py
+│   ├── create_clened_csv.py
+│   ├── Download_data.py
+│   ├── Images/                    # NumPy Concept Images
+│   └── requirements.txt
+│
+├── lab_4/                         # Data Exploration & Cleaning
+│   ├── lab_4.ipynb
+│   ├── data.csv                   # Dataset
+│   ├── real_estate_cleaned.csv
+│   └── images/                    # Code Cell Images (cell_1 → cell_8)
+│
+├── lab_5/                         # Data Visualization Portfolio
+│   ├── lab_5.ipynb
+│   ├── data.csv                   # Dataset
+│   └── images/                    # Code Cell Images (cell_1 → cell_14)
+│
+├── lab_6/                         # Interactive Data Visualization Dashboard
+│   ├── lab_6.ipynb                # Interactive Dashboard Notebook
+│   ├── dashboard.html             # Exported Interactive Dashboard
+│   ├── data.csv                   # Global Country Information (2023)
+│   └── images/                    # Code Cell Images (cell_1 → cell_19)
+│
+├── manual/                        # Documentation (All Labs)
+│   ├── lab1/
+│   │   ├── lab_1.docx
+│   │   ├── lab_1.pdf
+│   │   └── Images/                # Code + Custom Images
+│   ├── lab2/
+│   │   ├── lab_2.docx
+│   │   ├── lab_2.pdf
+│   │   └── images/                # Code + Custom Images
+│   ├── lab3/
+│   │   ├── Lab_3.docx
+│   │   ├── Lab_3.pdf
+│   │   └── images/               # Code + Custom Images
+│   ├── lab4/
+│   │   ├── lab_4.docx
+│   │   ├── lab_4.pdf
+│   │   └── images/                # Code + Custom Images
+│   ├── lab5/
+│   │   ├── lab_5.docx
+│   │   ├── lab_5.pdf
+│   │   └── images/              # Code + Custom Images
+│   └── lab6/
+│       ├── lab_6.docx
+│       ├── lab_6.pdf
+│       └── images/              # Code + Custom Images
+│
+└── README.md                      # Project Documentation
 ```
 
 ---
@@ -96,6 +105,7 @@ The following libraries are fundamental to the workflow:
 | **NumPy** | Fundamental package for scientific computing |
 | **Matplotlib** | Comprehensive library for static, animated, and interactive visualizations |
 | **Seaborn** | Statistical data visualization based on Matplotlib |
+| **Plotly** | Interactive graphing library for web-based dashboards |
 
 ---
 
@@ -152,6 +162,19 @@ The final module showcases professional data visualization techniques using **Ma
 
 ---
 
+## 📊 Phase 6: Interactive Data Visualization Dashboard (Lab 6)
+
+This module focuses on creating professional, web-based interactive dashboards using **Plotly** and **Pandas** using the Global Country Information (2023) dataset.
+
+### 🔹 Dashboard Features
+*   **Geographic Visualization**: World Choropleth maps for global metric distribution (e.g., Tax Rates).
+*   **Multi-Dimensional Analysis**: 3D Scatter plots for complex variable relationships.
+*   **Dynamic Exploration**: Interactive line, bar, and scatter charts with hover information and zooming.
+*   **Temporal Simulation**: Animated visualizations demonstrating trends over simulated time periods.
+*   **Unified Layout**: Combining multiple interactive components into a single, cohesive HTML dashboard.
+
+---
+
 ## 🏥 Industry Use Cases
 
 Data analytics techniques covered in these labs are applied across various sectors:
@@ -163,6 +186,7 @@ Data analytics techniques covered in these labs are applied across various secto
 | **Retail** | Customer behavior analysis and recommendation systems. |
 | **Real Estate** | Property valuation, market trend analysis, and investment risk assessment. |
 | **Manufacturing** | Predictive maintenance and quality control optimization. |
+| **Global Governance** | Socio-economic metric tracking and international policy analysis. |
 
 ---
 
@@ -174,6 +198,7 @@ Data analytics techniques covered in these labs are applied across various secto
 - [x] Executed complex numerical operations using NumPy on financial datasets.
 - [x] Performed end-to-end data cleaning and exploration on real estate data.
 - [x] Developed a comprehensive visualization portfolio with 10+ chart types.
+- [x] Created a professional interactive dashboard with 6+ dynamic visualizations.
 
 ---
 
