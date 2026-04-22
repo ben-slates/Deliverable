@@ -223,3 +223,12 @@ Data analytics techniques covered in these labs are applied across various secto
   <img src="https://img.shields.io/badge/Built%20by-BEN-green"/>
   <img src="https://img.shields.io/badge/Python-Data%20Analytics-blue?logo=python"/>
 </p>
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Brand Protection
+
+The name "benslates" is a protected personal brand.
+See BRAND.md for usage guidelines.
